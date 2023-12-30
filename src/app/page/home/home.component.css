@@ -1,0 +1,73 @@
+.title{
+
+  display: flex;
+  align-items: center;
+  justify-content :center;
+  margin-top: 10.938em;
+}
+
+
+h1{
+font-size: 6rem;
+font-family: 'roboto';
+font-weight:800;
+}
+
+.imagens,ul{
+  display: flex;
+  align-items: center;
+  justify-content :center;
+  flex-direction:row;
+  margin-top: 3.125rem;
+  list-style: none;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+img
+{
+  height: 5rem;
+
+}
+
+.nome{
+  display: flex;
+  align-items: center;
+  justify-content :center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.nome, h2{
+
+  font-size: 0.8rem;
+  font-family: 'roboto';
+  font-weight: 700;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+h1{
+
+  font-size: 6rem;
+  font-family: 'roboto';
+  font-weight:800;
+  padding-left: 4rem;
+  }
+  }
+
+
+@media  (max-width:991px) {
+
+  h1{
+
+    font-size: 3rem;
+    font-family: 'roboto';
+    font-weight:800;
+    padding-left: 4rem;
+    }
+    }
+

@@ -1,0 +1,138 @@
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+.title{
+
+justify-content: center;
+
+left: 10rem;
+position: relative;
+margin-top: 2.5rem;
+
+
+}
+
+.title h1{
+  font-family:"Montserrat";
+  font-weight: 600;
+  font-size: 36px;
+
+}
+
+.layout {
+
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 105px;
+}
+
+ul li {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: #F0F0F0;
+}
+
+li h2 {
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+
+.linguagens {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.linguagens .S {
+  background-color: #221742;
+  border-radius: 0.1rem;
+  height: 1.5rem;
+  padding: 0.1rem;
+
+
+}
+
+.linguagens .S span {
+  color: aliceblue;
+  font-family: "Montserrat";
+}
+
+.btn{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 2.5rem;
+}
+
+ a {
+
+  justify-content: center;
+  color: #ddd;
+  font-family:' Roboto', sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+
+  background: linear-gradient(61deg, #221742 0%, #621b8f 100%);
+  padding: 10px 30px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 12px 25px;
+  transition : 410ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  box-shadow:rgb(204, 204, 204) 18px 24px 44px;
+
+  list-style: none;
+  text-decoration: none;
+ padding-top: 4re;
+
+}
+
+a:hover
+{
+
+  transition : 410ms;
+padding: 10px 64px;
+transform : translateY(-0px);
+background: linear-gradient(61deg, #221742 0%, #621b8f 100%);
+color: #dfefff;
+border: none;
+}
+
+
+
+.example-card {
+  max-width: 400px;
+  background-color: #F0F0F0;
+
+}
+
+.example-header-image {
+ background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+
+.example-card p{
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
