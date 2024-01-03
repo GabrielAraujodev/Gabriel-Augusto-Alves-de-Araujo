@@ -4,6 +4,7 @@
   align-items: center;
   justify-content :center;
   margin-top: 10.938em;
+  
 }
 
 
@@ -11,7 +12,10 @@ h1{
 font-size: 6rem;
 font-family: 'roboto';
 font-weight:800;
+
+
 }
+
 
 .imagens,ul{
   display: flex;
@@ -56,6 +60,7 @@ h1{
   font-family: 'roboto';
   font-weight:800;
   padding-left: 4rem;
+  line-height: 4rem;
   }
   }
 
