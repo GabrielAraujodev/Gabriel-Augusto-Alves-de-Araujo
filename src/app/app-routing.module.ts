@@ -6,10 +6,10 @@ import { HomeComponent } from './page/home/home.component';
 
 
 const routes: Routes = [
-  { path:   'sobre', component: SobreComponent },
-  { path:  'projeto', component: ProjetoComponent },
-  { path:  'home', component: HomeComponent },
-  
+  { path:   'sobre', title: 'Sobre',component: SobreComponent },
+  { path:  'projeto',title: 'Projetos', component: ProjetoComponent },
+  { path:  'home', title:'Home', component: HomeComponent },
+
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
