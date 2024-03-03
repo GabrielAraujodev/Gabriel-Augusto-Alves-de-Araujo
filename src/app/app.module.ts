@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { RouterLinkActive } from '@angular/router';
+import { ButtonComponent } from './component/button/button.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { RouterLinkActive } from '@angular/router';
     SobreComponent,
     ProjetoComponent,
     DownloadButtonComponent,
+    ButtonComponent,
 
 
 

@@ -55,17 +55,18 @@ li h2 {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
+
   gap: 1rem;
   padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 .linguagens .S {
-  background-color: #221742;
+  background-color: #2b1e53;
   border-radius: 0.1rem;
   height: 1.5rem;
+
   padding: 0.1rem;
-
-
 }
 
 .linguagens .S span {
@@ -87,35 +88,27 @@ li h2 {
   font-family:' Roboto', sans-serif;
   font-weight: 0;
   font-size: 14px;
-
   background: linear-gradient(61deg, #221742 0%, #621b8f 100%);
   padding: 10px 30px;
   border: none;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  border-radius: 12px 25px;
+  box-shadow: 14px 11px 10px -8px rgba(0,0,0,0.1);
   transition : 410ms;
   transform: translateY(0);
   display: flex;
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  box-shadow:rgb(204, 204, 204) 18px 24px 44px;
-
   list-style: none;
   text-decoration: none;
- padding-top: 4re;
-
+  padding-top: 4re;
+  border-radius: .5rem;
+  transition: all 1s;
 }
 
 a:hover
 {
+background-color: #621b8f;
 
-  transition : 410ms;
-padding: 10px 64px;
-transform : translateY(-0px);
-background: linear-gradient(61deg, #221742 0%, #621b8f 100%);
-color: #dfefff;
-border: none;
 }
 
 

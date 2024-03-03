@@ -1,0 +1,30 @@
+.btn
+{
+  font-family:' Roboto', sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #f7f5ff;
+  background: linear-gradient(61deg, #221742 0%, #621b8f 100%);
+  padding: 10px 30px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+
+  transition : 410ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  box-shadow:rgb(204, 204, 204) 18px 24px 44px;
+  }
+
+  .download:hover{
+
+  transition : 410ms;
+  padding: 10px 64px;
+  transform : translateY(-0px);
+  background: linear-gradient(61deg, #221742 0%, #621b8f 100%);
+  color: #dfefff;
+  border: none;
+  }
+
