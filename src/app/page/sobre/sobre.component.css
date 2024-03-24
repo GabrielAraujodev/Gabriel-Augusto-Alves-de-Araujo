@@ -95,9 +95,6 @@ padding-top:-1 0rem;
   padding-right: 4rem;
 
 
-
-
-
 }
 
 .sobre h3{
@@ -116,6 +113,64 @@ padding-top:-1 0rem;
   font-size: 1rem;
   margin-bottom: 2rem;
   line-height: 1.8rem;
+}
+
+
+.linguagens{
+margin-top: 5%;
+margin-left: 4%;
+
+}
+
+
+ ul{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+li{
+  list-style: none;
+}
+.ling li img{
+width: 8rem;
+list-style:none;
+
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+ul li {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+
+  animation: slide 6s linear infinite;
+}
+
+ul li img {
+
+  width: 5rem;
+
+
+  }
+
+.linguagens h1{
+  font-size: 2.5rem;
+  font-family: 'ROBOTO';
+  font-weight: 600;
+  margin-bottom: 3.3rem;
 }
 
 
@@ -157,6 +212,8 @@ padding-top:-1 0rem;
     font-size: 1.1rem;
     line-height: 2rem;
   }
+
+
 }
 
 @media  (max-width:991px) {
@@ -174,6 +231,20 @@ padding-top:-1 0rem;
    padding-top: 10rem;
     padding-bottom: 4rem;
     line-height: 1.5rem;
+
+  }
+  .linguagens {
+    margin-left: 2.5%;
+  }
+  .linguagens h1{
+    margin-left:4rem ;
+
+  }
+
+  ul li img {
+
+  width: 5rem;
+
 
   }
 }
