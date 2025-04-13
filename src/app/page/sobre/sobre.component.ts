@@ -19,7 +19,7 @@ Html5: any;
   image = './assets/github.jpg';
   image1 = './assets/gmail.jpg';
   image2 = './assets/linkedin.jpg';
-  corriculo = './assets/Currículo.pdf';
+  curriculum = './assets/curriculum.pdf';
   code = './assets/code.jpg';
   java ='./assets/Java.jpg';
   angular = './assets/AngularJS.jpg';
