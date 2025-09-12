@@ -62,6 +62,8 @@ ul {
 .mat-card-actions {
   padding: 16px;
   margin-top: auto;
+  display: flex;
+  gap: 8px;
 }
 
 .linguagens {

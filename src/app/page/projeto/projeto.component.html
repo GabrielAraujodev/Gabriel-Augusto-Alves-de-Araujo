@@ -28,6 +28,10 @@
                 Ver Projeto
                 <mat-icon>open_in_new</mat-icon>
               </a>
+              <a *ngIf="project.githubLink" mat-stroked-button [href]="project.githubLink" target="_blank">
+                GitHub
+                <mat-icon svgIcon="github"></mat-icon>
+              </a>
             </mat-card-actions>
           </mat-card>
         </li>
