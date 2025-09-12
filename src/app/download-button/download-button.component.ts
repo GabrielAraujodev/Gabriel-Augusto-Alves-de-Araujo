@@ -11,6 +11,11 @@ export class DownloadButtonComponent {
 
   constructor(private downloadService: DownloadService) {}
 
+/*************  ✨ Windsurf Command ⭐  *************/
+  /**
+   * Faz o download de um arquivo a partir de uma URL e do nome do arquivo.
+   * Caso as propriedades fileUrl e fileName não estejam preenchidas, lan a um erro.
+/*******  2e154189-40cc-4590-9229-04f802ce5211  *******/
   download(): void {
     if (this.fileUrl && this.fileName) {
       this.downloadService.downloadFile(this.fileUrl, this.fileName);
