@@ -36,7 +36,7 @@ export class ProjetoComponent {
       technologies: ['Python', 'Streamlit', 'Pandas', 'Plotly'],
       description: 'Um dashboard interativo desenvolvido com Streamlit para análise visual de dados de vendas de seguros. O projeto visa facilitar a tomada de decisão ao transformar dados brutos em insights claros e visuais.',
       link: 'https://finzi9jqzkt3pl2m8se2w7.streamlit.app/',
-      imageUrl: 'assets/projects/analise-seguro.svg',
+      imageUrl: 'assets/projects/analise-seguro.jpeg',
       githubLink: 'https://github.com/GabrielAraujodev/Analise_seguro'
     },
     {
