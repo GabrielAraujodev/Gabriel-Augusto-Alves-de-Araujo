@@ -30,6 +30,7 @@ Html5: any;
   saas = './assets/Sass.jpg';
   html = './assets/Html5.jpg';
   fire = './assets/Firebase.jpg';
+  python = './assets/Python.jpg';
 
 
 }
