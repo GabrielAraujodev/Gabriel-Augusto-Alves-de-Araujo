@@ -17,6 +17,13 @@ interface Project {
 export class ProjetoComponent {
   projects: Project[] = [
     {
+      title: 'Easy Plani',
+      technologies: ['TypeScript', 'CSS', 'Python', 'Angular'],
+      description: 'Easy Plani é uma ferramenta online de planejamento que permite aos usuários organizar paradas de viagem, escolher locais a visitar e montar roteiros de forma prática e intuitiva.',
+      link: 'https://essyplani.vercel.app/planner',
+      imageUrl: 'assets/projects/easy-plani.png'
+    },
+    {
       title: 'Bem-Estar Digital',
       technologies: ['React', 'Typescript', 'TailwindCSS'],
       description: 'Uma landing page voltada para promover saúde mental e equilíbrio emocional por meio da prática de mindfulness, meditação guiada e hábitos saudáveis no ambiente digital, ajudando usuários a reduzirem o estresse e aumentarem o foco.',
