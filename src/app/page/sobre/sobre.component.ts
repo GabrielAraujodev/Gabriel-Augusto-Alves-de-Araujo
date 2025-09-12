@@ -31,6 +31,6 @@ Html5: any;
   html = './assets/Html5.jpg';
   fire = './assets/Firebase.jpg';
   python = './assets/python.png';
-
+  bi='./assets/power-bi.png';
 
 }
