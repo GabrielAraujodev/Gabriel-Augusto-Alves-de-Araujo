@@ -4,7 +4,6 @@ import { DownloadService } from '../services/download.service';  // Certifique-s
 @Component({
   selector: 'app-download-button',
   templateUrl: `./download-button.component.html`,
-  styleUrl: `./download-button.component.css`,
 })
 export class DownloadButtonComponent {
   @Input() fileUrl: string = '';
