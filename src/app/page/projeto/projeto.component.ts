@@ -17,6 +17,14 @@ interface Project {
 export class ProjetoComponent {
   projects: Project[] = [
     {
+      title: 'Bem-Estar Digital',
+      technologies: ['React', 'Typescript', 'TailwindCSS'],
+      description: 'Uma landing page voltada para promover saúde mental e equilíbrio emocional por meio da prática de mindfulness, meditação guiada e hábitos saudáveis no ambiente digital, ajudando usuários a reduzirem o estresse e aumentarem o foco.',
+      link: 'https://bem-estar-digital.vercel.app/',
+      imageUrl: 'assets/projects/bem-estar-digital.png',
+      githubLink: 'https://github.com/GabrielAraujodev/Bem-Estar-Digital'
+    },
+    {
       title: 'Analise seguro',
       technologies: ['Python', 'Streamlit', 'Pandas', 'Plotly'],
       description: 'Um dashboard interativo desenvolvido com Streamlit para análise visual de dados de vendas de seguros. O projeto visa facilitar a tomada de decisão ao transformar dados brutos em insights claros e visuais.',
