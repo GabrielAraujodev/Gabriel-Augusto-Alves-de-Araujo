@@ -1,93 +1,65 @@
-<section class="main">
-
-    <div class="left">
-
-
-    <header>
-      <h1>SOFWARE DEVELOPER</h1>
-      <h2>Gabriel</h2>
-    </header>
-
-    <article>
+<div class="container">
+  <section class="intro-section">
+    <div class="intro-text">
+      <h1>Software Developer</h1>
+      <h2>Gabriel Augusto</h2>
       <p>
-        Estou em busca de oportunidades desafiadoras como desenvolvedor,
-        onde posso aplicar e aprimorar minhas habilidades em programação,
-        contribuindo para o desenvolvimento de soluções inovadoras e eficientes.
-        Tenho uma paixão genuína por enfrentar desafios técnicos, aprender novas
-        tecnologias e trabalhar em equipe para alcançar
-        metas e entregas de alta qualidade no desenvolvimento de software.
+        Tenho uma verdadeira paixão por tecnologia e programação, dedicando-me constantemente a aprimorar-me nessa área. Estou em busca de oportunidades desafiadoras, onde posso aplicar e aprimorar minhas habilidades, contribuindo para o desenvolvimento de soluções inovadoras e eficientes.
       </p>
-    <app-download-button
-      class="btn"
-      [fileUrl]="curriculum"
-      [fileName]="'curriculum'"
-    ></app-download-button>
-  </article>
-    </div>
-
-      <div class="right">
-        <img [src]="code" />
+      <p>
+        Meu objetivo é atuar como Desenvolvedor Full-Stack, contribuindo com minhas competências para o sucesso dos projetos. Sou um profissional comprometido e proativo, sempre em busca de novos desafios e aprendizados.
+      </p>
+      <div class="download-button-container">
+        <app-download-button
+          [fileUrl]="curriculum"
+          [fileName]="'curriculum'"
+        ></app-download-button>
       </div>
-
-
-
-
-</section  >
-
-<section class="sobre">
-
-
-<h3 class="title">Sobre</h3>
-
-<p class="text">
-
-  Sobre mim, tenho uma verdadeira paixão por tecnologia e
-   programação, dedicando-me constantemente a aprimorar-me nessa área.<br> Meu objetivo é atuar como Desenvolvedor Full-Stack, onde posso contribuir com minhas competências e experiência para o sucesso dos projetos. <br>Sou
-   um profissional comprometido e proativo, sempre em busca
-   de novos desafios e aprendizados.<br>
-
-  Acredito que meu entusiasmo pela tecnologia, combinado com
-  minha habilidade técnica e mentalidade proativa, me tornam um candidato
-  ideal para projetos inovadores. <br
-  >Estou ansioso para contribuir efetivamente para o crescimento de equipes e para o sucesso de projetos desafiadores.
-</p>
-</section>
-
-
-<section class="linguagens">
-
-  <div >
-    <div>
-    <h1> Skills</h1>
     </div>
-    <ul>
-      <li class=" ling">
-      <img  [src]="java">
-      </li>
-      <li class=" ling">
-        <img  [src]="angular">
-      </li>
-      <li class=" ling">
-        <img  [src]="cloud">
-      </li>
-      <li class=" ling">
-        <img  [src]="sql"></li>
-      <li class=" ling">
-        <img [src]="ionic">
-      </li>
-      <li class=" ling">
-        <img  [src]="javascript">
-      </li>
-        <li class=" ling">
-        <img  [src]="saas">
-      </li>
-    </ul>
+    <div class="intro-image">
+      <img [src]="code" alt="Ilustração de código" />
+    </div>
+  </section>
 
-
-
-
-
-  </div>
-
-
-</section >
+  <section class="skills-section">
+    <h3>Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img [src]="java" alt="Java logo">
+        <span>Java</span>
+      </div>
+      <div class="skill-item">
+        <img [src]="angular" alt="Angular logo">
+        <span>Angular</span>
+      </div>
+      <div class="skill-item">
+        <img [src]="javascript" alt="JavaScript logo">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img [src]="html" alt="HTML5 logo">
+        <span>HTML5</span>
+      </div>
+      <div class="skill-item">
+        <img [src]="saas" alt="Sass logo">
+        <span>Sass</span>
+      </div>
+      <div class="skill-item">
+        <img [src]="sql" alt="SQL logo">
+        <span>SQL</span>
+      </div>
+      <div class="skill-item">
+        <img [src]="ionic" alt="Ionic logo">
+        <span>Ionic</span>
+      </div>
+      <div class="skill-item">
+        <img [src]="cloud" alt="Cloud logo">
+        <span>Cloud</span>
+      </div>
+       <div class="skill-item">
+        <img [src]="fire" alt="Firebase logo">
+        <span>Firebase</span>
+      </div>
+    </div>
+  </section>
+</div>
