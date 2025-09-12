@@ -17,6 +17,13 @@ interface Project {
 export class ProjetoComponent {
   projects: Project[] = [
     {
+      title: 'PlanEdu',
+      technologies: ['React', 'Typescript', 'TailwindCSS', 'PostgreSQL'],
+      description: 'PlanEdu é uma plataforma online de planejamento educacional que ajuda professores e estudantes a organizar aulas, tarefas e conteúdos de forma eficiente. Com uma interface intuitiva, permite criar cronogramas, acompanhar o progresso e otimizar o aprendizado de maneira prática.',
+      link: 'https://classe-plano-central.vercel.app/',
+      imageUrl: 'assets/projects/planedu.png'
+    },
+    {
       title: 'Easy Plani',
       technologies: ['TypeScript', 'CSS', 'Python', 'Angular'],
       description: 'Easy Plani é uma ferramenta online de planejamento que permite aos usuários organizar paradas de viagem, escolher locais a visitar e montar roteiros de forma prática e intuitiva.',
