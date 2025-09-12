@@ -16,6 +16,13 @@ interface Project {
 export class ProjetoComponent {
   projects: Project[] = [
     {
+      title: 'Analise seguro',
+      technologies: ['Python', 'Streamlit', 'Pandas', 'Plotly'],
+      description: 'Um dashboard interativo desenvolvido com Streamlit para análise visual de dados de vendas de seguros. O projeto visa facilitar a tomada de decisão ao transformar dados brutos em insights claros e visuais.',
+      link: 'https://finzi9jqzkt3pl2m8se2w7.streamlit.app/',
+      imageUrl: 'assets/projects/analise-seguro.svg'
+    },
+    {
       title: 'Code Tech',
       technologies: ['CSS', 'HTML', 'JAVASCRIPT'],
       description: 'Desenvolvi a Landing Page "Code Tech", um espaço virtual onde a magia da programação ganha vida. Utilizando as poderosas linguagens de programação como JavaScript, HTML e CSS, criamos uma experiência envolvente para apresentar serviços de programação de forma única.',
