@@ -21,6 +21,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { RouterLinkActive } from '@angular/router';
 import { ButtonComponent } from './component/button/button.component';
+import { ContactComponent } from './page/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { ButtonComponent } from './component/button/button.component';
     ProjetoComponent,
     DownloadButtonComponent,
     ButtonComponent,
+    ContactComponent,
 
 
 

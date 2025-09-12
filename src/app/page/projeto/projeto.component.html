@@ -9,6 +9,7 @@
       <ul>
         <li *ngFor="let project of projects">
           <mat-card class="example-card">
+            <img mat-card-image [src]="project.imageUrl" [alt]="'Screenshot do projeto ' + project.title">
             <mat-card-header>
               <mat-card-title>{{ project.title }}</mat-card-title>
             </mat-card-header>

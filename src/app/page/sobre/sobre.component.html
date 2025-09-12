@@ -1,8 +1,8 @@
 <div class="container">
   <section class="intro-section">
     <div class="intro-text">
-      <h1>Software Developer</h1>
-      <h2>Gabriel Augusto</h2>
+      <h1>Gabriel Augusto</h1>
+      <h2>Software Developer</h2>
       <p>
         Tenho uma verdadeira paixão por tecnologia e programação, dedicando-me constantemente a aprimorar-me nessa área. Estou em busca de oportunidades desafiadoras, onde posso aplicar e aprimorar minhas habilidades, contribuindo para o desenvolvimento de soluções inovadoras e eficientes.
       </p>
@@ -17,48 +17,63 @@
       </div>
     </div>
     <div class="intro-image">
-      <img [src]="code" alt="Ilustração de código" />
+      <img [src]="code" alt="Ilustração de código representando um desenvolvedor" />
     </div>
   </section>
 
   <section class="skills-section">
-    <h3>Skills</h3>
-    <div class="skills-grid">
-      <div class="skill-item">
-        <img [src]="java" alt="Java logo">
-        <span>Java</span>
+    <h3>Minhas Habilidades</h3>
+    <div class="skills-categories">
+      <div class="skills-category">
+        <h4>Frontend</h4>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img [src]="angular" alt="Angular logo">
+            <span>Angular</span>
+          </div>
+          <div class="skill-item">
+            <img [src]="javascript" alt="JavaScript logo">
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <img [src]="html" alt="HTML5 logo">
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <img [src]="saas" alt="Sass logo">
+            <span>Sass</span>
+          </div>
+          <div class="skill-item">
+            <img [src]="ionic" alt="Ionic logo">
+            <span>Ionic</span>
+          </div>
+        </div>
       </div>
-      <div class="skill-item">
-        <img [src]="angular" alt="Angular logo">
-        <span>Angular</span>
+      <div class="skills-category">
+        <h4>Backend & Databases</h4>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img [src]="java" alt="Java logo">
+            <span>Java</span>
+          </div>
+          <div class="skill-item">
+            <img [src]="sql" alt="SQL logo">
+            <span>SQL</span>
+          </div>
+          <div class="skill-item">
+            <img [src]="fire" alt="Firebase logo">
+            <span>Firebase</span>
+          </div>
+        </div>
       </div>
-      <div class="skill-item">
-        <img [src]="javascript" alt="JavaScript logo">
-        <span>JavaScript</span>
-      </div>
-      <div class="skill-item">
-        <img [src]="html" alt="HTML5 logo">
-        <span>HTML5</span>
-      </div>
-      <div class="skill-item">
-        <img [src]="saas" alt="Sass logo">
-        <span>Sass</span>
-      </div>
-      <div class="skill-item">
-        <img [src]="sql" alt="SQL logo">
-        <span>SQL</span>
-      </div>
-      <div class="skill-item">
-        <img [src]="ionic" alt="Ionic logo">
-        <span>Ionic</span>
-      </div>
-      <div class="skill-item">
-        <img [src]="cloud" alt="Cloud logo">
-        <span>Cloud</span>
-      </div>
-       <div class="skill-item">
-        <img [src]="fire" alt="Firebase logo">
-        <span>Firebase</span>
+      <div class="skills-category">
+        <h4>Cloud & Plataformas</h4>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img [src]="cloud" alt="Cloud logo">
+            <span>Cloud</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
