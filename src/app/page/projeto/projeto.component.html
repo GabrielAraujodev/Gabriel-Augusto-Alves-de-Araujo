@@ -12,18 +12,21 @@
             <mat-card-header>
               <mat-card-title>{{ project.title }}</mat-card-title>
             </mat-card-header>
-            <div class="linguagens">
-              <div class="S" *ngFor="let tech of project.technologies">
-                <span>{{ tech }}</span>
-              </div>
-            </div>
             <mat-card-content>
+              <div class="linguagens">
+                <div class="tech-tag" *ngFor="let tech of project.technologies">
+                  <span>{{ tech }}</span>
+                </div>
+              </div>
               <p>
                 {{ project.description }}
               </p>
             </mat-card-content>
             <mat-card-actions>
-              <button mat-button> <a [href]="project.link" target="_blank">Link</a></button>
+              <a mat-stroked-button color="primary" [href]="project.link" target="_blank">
+                Ver Projeto
+                <mat-icon>open_in_new</mat-icon>
+              </a>
             </mat-card-actions>
           </mat-card>
         </li>

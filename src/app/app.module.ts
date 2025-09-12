@@ -13,6 +13,7 @@ import { DownloadButtonComponent } from './download-button/download-button.compo
 import { DownloadService } from './services/download.service';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -42,7 +43,8 @@ import { ButtonComponent } from './component/button/button.component';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    RouterLinkActive
+    RouterLinkActive,
+    MatIconModule
   ],
   providers: [
     DownloadService,
