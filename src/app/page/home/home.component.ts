@@ -5,11 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent
-
-{
-  image = './assets/github.jpg';
-  image1 = './assets/gmail.jpg';
-  image2 = './assets/linkedin.jpg';
-
+export class HomeComponent {
 }

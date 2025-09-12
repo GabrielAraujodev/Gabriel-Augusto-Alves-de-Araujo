@@ -1,78 +1,79 @@
-.title{
-
+.home-container {
   display: flex;
   align-items: center;
-  justify-content :center;
-  margin-top: 10.938em;
-  
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 200px); /* Adjust height based on header/footer */
+  min-height: 400px;
 }
 
-
-h1{
-font-size: 6rem;
-font-family: 'roboto';
-font-weight:800;
-
-
-}
-
-
-.imagens,ul{
-  display: flex;
-  align-items: center;
-  justify-content :center;
-  flex-direction:row;
-  margin-top: 3.125rem;
-  list-style: none;
-  padding: 2rem;
-  gap: 2rem;
-}
-
-img
-{
-  height: 5rem;
-
-}
-
-.nome{
-  display: flex;
-  align-items: center;
-  justify-content :center;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-}
-
-.nome, h2{
-
-  font-size: 0.8rem;
-  font-family: 'roboto';
+.content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
   font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
+.content h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #555;
+  margin: 0.5rem 0 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
 
+.social-links a {
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
 
-@media only screen and (max-width: 600px) {
+.social-links a:hover {
+  color: #3f51b5; /* Indigo */
+  transform: translateY(-3px);
+}
 
-h1{
+.social-links mat-icon {
+  font-size: 28px;
+  height: 28px;
+  width: 28px;
+}
 
-  font-size: 6rem;
-  font-family: 'roboto';
-  font-weight:800;
-  padding-left: 4rem;
-  line-height: 4rem;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.5rem;
   }
+
+  .content h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 0 1rem;
   }
 
+  .content h1 {
+    font-size: 2rem;
+  }
 
-@media  (max-width:991px) {
+  .content h2 {
+    font-size: 0.9rem;
+  }
 
-  h1{
-
-    font-size: 3rem;
-    font-family: 'roboto';
-    font-weight:800;
-    padding-left: 4rem;
-    }
-    }
-
+  .social-links mat-icon {
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+  }
+}
