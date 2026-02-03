@@ -10,11 +10,11 @@ interface Project {
 }
 
 @Component({
-  selector: 'app-projeto',
-  templateUrl: './projeto.component.html',
-  styleUrl: './projeto.component.css'
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrl: './projects.component.css'
 })
-export class ProjetoComponent {
+export class ProjectsComponent {
   projects: Project[] = [
     {
       title: 'PlanEdu',

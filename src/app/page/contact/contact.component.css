@@ -9,17 +9,18 @@
 }
 
 .content h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-family: var(--font-display);
+  font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: 1rem;
 }
 
 .content p {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-main);
   font-size: 1.1rem;
-  line-height: 1.8;
-  color: #555;
+  line-height: var(--line-height-relaxed);
+  color: #a0a0a0;
   max-width: 600px;
   margin: 0 auto 2.5rem auto;
 }
@@ -31,14 +32,16 @@
 }
 
 .social-links a {
-  color: #333;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: #888;
+  transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #3f51b5; /* Indigo */
+  color: #fff;
   transform: translateY(-3px);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
 }
+
 
 .social-links mat-icon {
   font-size: 32px;
@@ -51,6 +54,7 @@
   .content h1 {
     font-size: 2.5rem;
   }
+
   .content p {
     font-size: 1rem;
   }

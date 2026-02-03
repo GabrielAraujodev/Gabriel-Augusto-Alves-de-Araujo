@@ -4,10 +4,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-sobre',
   templateUrl: './sobre.component.html',
-  styleUrls: ['./sobre.component.css']
+  styleUrl: './sobre.component.css'
 })
 export class SobreComponent implements OnInit {
-Html5: any;
+  Html5: any;
 
 
 
@@ -21,16 +21,16 @@ Html5: any;
   image2 = './assets/linkedin.jpg';
   curriculum = './assets/Gabriel_Araújo_Currículo_TI.pdf';
   code = './assets/profile-photo.png';
-  java ='./assets/Java.jpg';
+  java = './assets/Java.jpg';
   angular = './assets/AngularJS.jpg';
   cloud = './assets/Cloud.jpg';
-  ionic ='./assets/Ionic.jpg';
+  ionic = './assets/Ionic.jpg';
   javascript = './assets/JavaScript.jpg';
-  sql =   './assets/SQL.jpg';
+  sql = './assets/SQL.jpg';
   saas = './assets/Sass.jpg';
   html = './assets/Html5.jpg';
   fire = './assets/Firebase.jpg';
   python = './assets/python.png';
-  bi='./assets/power-bi.png';
+  bi = './assets/power-bi.png';
 
 }
