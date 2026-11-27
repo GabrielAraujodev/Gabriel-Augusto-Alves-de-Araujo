@@ -3,9 +3,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: calc(100vh - 200px);
-  min-height: 400px;
-  padding: 0 2rem;
+  min-height: calc(100vh - 160px);
+  padding: 2rem 1.5rem;
 }
 
 .content h1 {
@@ -14,39 +13,76 @@
   font-weight: 700;
   letter-spacing: var(--letter-spacing-tight);
   margin-bottom: 1rem;
+  background: linear-gradient(180deg, #FFFFFF 0%, #B0B0B0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .content p {
   font-family: var(--font-main);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: var(--line-height-relaxed);
   color: #a0a0a0;
-  max-width: 600px;
-  margin: 0 auto 2.5rem auto;
+  max-width: 620px;
+  margin: 0 auto 3rem auto;
 }
 
-.social-links {
+.contact-cards {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.social-links a {
-  color: #888;
-  transition: all 0.3s ease;
-}
-
-.social-links a:hover {
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem 1.8rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  text-decoration: none;
   color: #fff;
-  transform: translateY(-3px);
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  min-width: 260px;
+  backdrop-filter: blur(10px);
 }
 
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
 
-.social-links mat-icon {
+.contact-card mat-icon {
   font-size: 32px;
   height: 32px;
   width: 32px;
+  color: #fff;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.card-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #888;
+}
+
+.card-val {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
 }
 
 /* Responsive Design */
@@ -57,5 +93,15 @@
 
   .content p {
     font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 85%;
   }
 }
