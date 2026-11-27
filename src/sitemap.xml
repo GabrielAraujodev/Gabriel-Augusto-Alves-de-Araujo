@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gabrielaraujodev.github.io/Gabriel-Augusto-Alves-de-Araujo/home</loc>
+    <loc>https://gabriel-augusto.gabitus.com.br/</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://gabrielaraujodev.github.io/Gabriel-Augusto-Alves-de-Araujo/sobre</loc>
+    <loc>https://gabriel-augusto.gabitus.com.br/home</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gabriel-augusto.gabitus.com.br/sobre</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gabrielaraujodev.github.io/Gabriel-Augusto-Alves-de-Araujo/projects</loc>
+    <loc>https://gabriel-augusto.gabitus.com.br/projects</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://gabrielaraujodev.github.io/Gabriel-Augusto-Alves-de-Araujo/contato</loc>
+    <loc>https://gabriel-augusto.gabitus.com.br/contato</loc>
     <lastmod>2026-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
