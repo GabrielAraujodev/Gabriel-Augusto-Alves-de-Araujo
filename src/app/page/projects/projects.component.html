@@ -1,7 +1,7 @@
-<section class="container">
+<main class="container">
 
   <div class="title">
-    <h1>Projetos</h1>
+    <h1>Projetos em Destaque</h1>
   </div>
   <section class="layout">
     <div class="projetos">
@@ -9,7 +9,7 @@
       <ul>
         <li *ngFor="let project of projects">
           <mat-card class="example-card">
-            <img mat-card-image [src]="project.imageUrl" [alt]="'Screenshot do projeto ' + project.title">
+            <img mat-card-image [src]="project.imageUrl" [alt]="'Captura de tela do projeto ' + project.title" loading="lazy" decoding="async">
             <mat-card-header>
               <mat-card-title>{{ project.title }}</mat-card-title>
             </mat-card-header>
@@ -24,11 +24,11 @@
               </p>
             </mat-card-content>
             <mat-card-actions>
-              <a mat-stroked-button color="primary" [href]="project.link" target="_blank">
+              <a mat-stroked-button color="primary" [href]="project.link" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Visualizar demonstração do projeto ' + project.title">
                 Ver Projeto
                 <mat-icon>open_in_new</mat-icon>
               </a>
-              <a *ngIf="project.githubLink" mat-stroked-button [href]="project.githubLink" target="_blank">
+              <a *ngIf="project.githubLink" mat-stroked-button [href]="project.githubLink" target="_blank" rel="noopener noreferrer" [attr.aria-label]="'Código fonte no GitHub do projeto ' + project.title">
                 GitHub
                 <mat-icon svgIcon="github"></mat-icon>
               </a>
@@ -41,7 +41,7 @@
   </section>
 
   <div class="btn">
-    <a href="https://github.com/GabrielAraujodev" target="_blank"> VER TODOS OS PROJETOS</a>
- </div>
+    <a href="https://github.com/GabrielAraujodev" target="_blank" rel="noopener noreferrer" aria-label="Ver todos os projetos de Gabriel Augusto no GitHub">VER TODOS OS PROJETOS</a>
+  </div>
 
-</section>
+</main>

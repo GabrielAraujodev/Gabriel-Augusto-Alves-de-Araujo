@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://gabrielaraujodev.github.io/Gabriel-Augusto-Alves-de-Araujo/sitemap.xml
