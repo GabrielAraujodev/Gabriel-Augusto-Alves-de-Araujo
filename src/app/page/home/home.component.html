@@ -1,31 +1,57 @@
-<main class="home-container">
-  <div class="content">
-    <h1>GABRIEL AUGUSTO</h1>
-    <h2>SOFTWARE DEVELOPER FULL-STACK</h2>
-    <p class="hero-description">
-      Especializado em criar aplicações web modernas, interfaces responsivas e soluções completas com Angular, React, TypeScript, Python e Java.
+<section class="membrane-hero" #heroContainer (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave()" (mousedown)="onMouseDown()" (mouseup)="onMouseUp()">
+  <!-- Living Mesh Canvas -->
+  <canvas #meshCanvas class="mesh-canvas"></canvas>
+
+  <!-- Centered Content Layer -->
+  <div class="content-container">
+    <!-- Award Badge -->
+    <div class="award-badge" data-reveal>
+      <svg class="laurel-svg left-laurel" viewBox="0 0 24 36" fill="currentColor">
+        <path d="M11 2C10 5 7 8 4 10C7 11 10 11 11 13C9 15 6 17 2 18C5 20 8 20 9 22C7 24 4 27 0 28C4 30 7 29 8 32C6 34 3 35 1 36C4 36 8 34 11 31C13 28 15 23 16 17C17 11 15 5 11 2Z"/>
+      </svg>
+      <div class="badge-center">
+        <span class="badge-title">#1 Interactive Section</span>
+        <div class="stars-row">
+          <svg *ngFor="let i of [1,2,3,4,5]" class="star-icon" viewBox="0 0 24 24">
+            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+          </svg>
+        </div>
+      </div>
+      <svg class="laurel-svg right-laurel" viewBox="0 0 24 36" fill="currentColor">
+        <path d="M13 2C14 5 17 8 20 10C17 11 14 11 13 13C15 15 18 17 22 18C19 20 16 20 15 22C17 24 20 27 24 28C20 30 17 29 16 32C18 34 21 35 23 36C20 36 16 34 13 31C11 28 9 23 8 17C7 11 9 5 13 2Z"/>
+      </svg>
+    </div>
+
+    <!-- Title -->
+    <h1 class="hero-title" data-reveal>
+      Touch the <span class="highlight-word">invisible</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="hero-subtitle" data-reveal>
+      A living surface that responds to your presence. Move your cursor. Click to press deeper.
     </p>
 
-    <div class="hero-actions">
-      <a routerLink="/projects" class="btn-cta-primary">
-        Ver Projetos
-        <mat-icon>arrow_forward</mat-icon>
+    <!-- Buttons -->
+    <div class="hero-buttons" data-reveal>
+      <a routerLink="/projects" class="btn-primary">
+        Get this section
       </a>
-      <a routerLink="/contato" class="btn-cta-secondary">
-        Entrar em Contato
+      <a href="https://github.com/GabrielAraujodev" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+        View code
       </a>
     </div>
 
-    <div class="social-links">
-      <a href="https://github.com/GabrielAraujodev" target="_blank" rel="noopener noreferrer" aria-label="Perfil do GitHub de Gabriel Augusto" title="GitHub">
-        <mat-icon svgIcon="github"></mat-icon>
-      </a>
-      <a href="https://www.linkedin.com/in/gabriel-augusto-alves-de-araujo-98b89b23a/" target="_blank" rel="noopener noreferrer" aria-label="Perfil do LinkedIn de Gabriel Augusto" title="LinkedIn">
-        <mat-icon svgIcon="linkedin"></mat-icon>
-      </a>
-      <a href="mailto:Gabrielalves6p@gmail.com" rel="noopener noreferrer" aria-label="Enviar e-mail para Gabriel Augusto" title="E-mail">
-        <mat-icon svgIcon="email"></mat-icon>
-      </a>
+    <!-- Social Proof -->
+    <div class="social-proof" data-reveal>
+      <div class="avatar-group">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Creator avatar" class="avatar" loading="lazy" decoding="async">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Creator avatar" class="avatar" loading="lazy" decoding="async">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Creator avatar" class="avatar" loading="lazy" decoding="async">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Creator avatar" class="avatar" loading="lazy" decoding="async">
+        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Creator avatar" class="avatar" loading="lazy" decoding="async">
+      </div>
+      <span class="proof-text"><strong class="highlight-count">2,400+</strong> creators joined</span>
     </div>
   </div>
-</main>
+</section>
