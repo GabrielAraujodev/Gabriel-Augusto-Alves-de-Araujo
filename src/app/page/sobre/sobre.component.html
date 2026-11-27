@@ -20,7 +20,7 @@
     </div>
 
     <div class="intro-image">
-      <img [src]="code" alt="Foto de perfil de Gabriel Augusto - Bacharel em Ciência da Computação" loading="eager" decoding="async" />
+      <img [src]="code" src="/assets/profile-photo.png" alt="Foto de perfil de Gabriel Augusto - Bacharel em Ciência da Computação" loading="eager" decoding="async" />
     </div>
   </section>
 
@@ -130,71 +130,72 @@
 
   <!-- 5. Habilidades Técnicas & Stack -->
   <section class="skills-section">
-    <h3 class="section-title">Stack Tecnológica &amp; Habilidades</h3>
+    <h3>Minhas Habilidades &amp; Tecnologias</h3>
     <div class="skills-categories">
-      
-      <div class="skills-category-card">
-        <h4>Frontend Engineering</h4>
+      <div class="skills-category">
+        <h4>Frontend</h4>
         <div class="skills-grid">
-          <div class="skill-item">
-            <img [src]="angular" alt="Logo Angular" loading="lazy" decoding="async">
+          <div class="skill-item angular">
+            <img [src]="angular" alt="Logo da tecnologia Angular" loading="lazy" decoding="async">
             <span>Angular</span>
           </div>
-          <div class="skill-item">
-            <img [src]="javascript" alt="Logo JavaScript" loading="lazy" decoding="async">
+          <div class="skill-item js">
+            <img [src]="javascript" alt="Logo da linguagem JavaScript" loading="lazy" decoding="async">
             <span>JavaScript</span>
           </div>
-          <div class="skill-item">
-            <img [src]="html" alt="Logo HTML5" loading="lazy" decoding="async">
+          <div class="skill-item html">
+            <img [src]="html" alt="Logo do padrão HTML5" loading="lazy" decoding="async">
             <span>HTML5</span>
           </div>
-          <div class="skill-item">
-            <img [src]="saas" alt="Logo Sass" loading="lazy" decoding="async">
+          <div class="skill-item sass">
+            <img [src]="saas" alt="Logo do pré-processador Sass" loading="lazy" decoding="async">
             <span>Sass</span>
           </div>
-          <div class="skill-item">
-            <img [src]="ionic" alt="Logo Ionic" loading="lazy" decoding="async">
+          <div class="skill-item ionic">
+            <img [src]="ionic" alt="Logo do framework Ionic" loading="lazy" decoding="async">
             <span>Ionic</span>
           </div>
         </div>
       </div>
-
-      <div class="skills-category-card">
+      <div class="skills-category">
         <h4>Backend &amp; Bancos de Dados</h4>
         <div class="skills-grid">
-          <div class="skill-item">
-            <img [src]="python" alt="Logo Python" loading="lazy" decoding="async">
-            <span>Python</span>
-          </div>
-          <div class="skill-item">
-            <img [src]="java" alt="Logo Java" loading="lazy" decoding="async">
+          <div class="skill-item java">
+            <img [src]="java" alt="Logo da linguagem Java" loading="lazy" decoding="async">
             <span>Java</span>
           </div>
-          <div class="skill-item">
-            <img [src]="sql" alt="Logo SQL" loading="lazy" decoding="async">
-            <span>SQL / MySQL</span>
+          <div class="skill-item python">
+            <img [src]="python" alt="Logo da linguagem Python" loading="lazy" decoding="async">
+            <span>Python</span>
           </div>
-          <div class="skill-item">
-            <img [src]="fire" alt="Logo Firebase" loading="lazy" decoding="async">
+          <div class="skill-item sql">
+            <img [src]="sql" alt="Logo de bancos de dados SQL" loading="lazy" decoding="async">
+            <span>SQL</span>
+          </div>
+          <div class="skill-item firebase">
+            <img [src]="fire" alt="Logo da plataforma Firebase" loading="lazy" decoding="async">
             <span>Firebase</span>
           </div>
         </div>
       </div>
-
-      <div class="skills-category-card">
-        <h4>Data, BI &amp; Infraestrutura</h4>
+      <div class="skills-category">
+        <h4>Business Intelligence</h4>
         <div class="skills-grid">
-          <div class="skill-item">
-            <img [src]="bi" alt="Logo Power BI" loading="lazy" decoding="async">
+          <div class="skill-item bi">
+            <img [src]="bi" alt="Logo da ferramenta Power BI" loading="lazy" decoding="async">
             <span>Power BI</span>
-          </div>
-          <div class="skill-item">
-            <img [src]="cloud" alt="Logo Cloud" loading="lazy" decoding="async">
-            <span>Cloud &amp; Redes</span>
           </div>
         </div>
       </div>
-
+      <div class="skills-category">
+        <h4>Cloud &amp; Infraestrutura</h4>
+        <div class="skills-grid">
+          <div class="skill-item cloud">
+            <img [src]="cloud" alt="Logo de serviços Cloud e Nuvem" loading="lazy" decoding="async">
+            <span>Cloud</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </main>
