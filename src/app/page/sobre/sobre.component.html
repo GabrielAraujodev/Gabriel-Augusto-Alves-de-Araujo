@@ -1,91 +1,211 @@
 <main class="container">
+  <!-- 1. Hero / Intro Section -->
   <section class="intro-section">
     <div class="intro-text">
+      <div class="status-tags">
+        <span class="status-tag">📍 Goiânia, GO</span>
+        <span class="status-tag highlight">🎓 Graduado em Ciência da Computação</span>
+        <span class="status-tag highlight-blue">📊 Pós-graduando em Análise de Dados</span>
+      </div>
+
       <h1>Gabriel Augusto</h1>
-      <h2>Software Developer Full-Stack</h2>
+      <h2>Desenvolvedor Full-Stack & Analista de Dados</h2>
+
       <p>
-        Desenvolvedor Full-Stack focado em transformar problemas reais em soluções digitais elegantes, eficientes e de alto impacto. Atuo desde a concepção de interfaces modernas e responsivas até o desenvolvimento de arquiteturas de back-end robustas e integração de APIs.
+        Bacharel em <strong>Ciência da Computação</strong> e pós-graduando em <strong>Análise de Dados</strong>, combino forte embasamento teórico em algoritmos e engenharia de software com experiência prática corporativa em projetos de tecnologia, infraestrutura e inteligência de dados.
       </p>
       <p>
-        Com sólida vivência prática em <strong>Angular, React, TypeScript, Java, Python e SQL</strong>, priorizo a escrita de código limpo, componentização escalável, boas práticas de UX e otimização contínua de performance.
+        Minha atuação une a construção de interfaces modernas e performáticas (<strong>Angular, React, TypeScript</strong>) com arquiteturas de back-end sólidas (<strong>Java, Python, SQL</strong>) e a capacidade analítica de transformar dados brutos em <strong>dashboards interativos e decisões estratégicas</strong>.
       </p>
-      <div class="download-button-container">
-        <app-download-button [fileUrl]="curriculum"
-          [fileName]="'Gabriel_Araújo_Currículo_TI.pdf'"></app-download-button>
+
+      <div class="intro-actions">
+        <app-download-button [fileUrl]="curriculum" [fileName]="'Gabriel_Araujo_Curriculo_TI.pdf'"></app-download-button>
+        <a routerLink="/contato" class="btn-contact">Entrar em Contato</a>
       </div>
     </div>
+
     <div class="intro-image">
-      <img [src]="code" alt="Foto de perfil de Gabriel Augusto - Desenvolvedor de Software" loading="eager" decoding="async" />
+      <img [src]="code" alt="Foto de perfil de Gabriel Augusto - Bacharel em Ciência da Computação" loading="eager" decoding="async" />
     </div>
   </section>
 
+  <!-- 2. Formação Acadêmica & Pós-Graduação -->
+  <section class="education-section">
+    <h3 class="section-title">Formação Acadêmica</h3>
+    <div class="education-grid">
+      <div class="edu-card">
+        <div class="edu-badge">Pós-Graduação • Em Andamento</div>
+        <h4>Especialização em Análise de Dados</h4>
+        <p class="edu-inst">Foco em Data Analytics, Business Intelligence & Big Data</p>
+        <p class="edu-desc">
+          Aprofundamento em modelagem de dados, estatística aplicada, automação com Python (Pandas/NumPy), visualização avançada com Power BI e tomada de decisão orientada a dados.
+        </p>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-badge completed">Graduação • Concluída</div>
+        <h4>Bacharelado em Ciência da Computação</h4>
+        <p class="edu-inst">UNIAMÉRICA</p>
+        <p class="edu-desc">
+          Formação abrangente com foco em arquitetura de computadores, lógica de programação, estruturas de dados, banco de dados relacionais e engenharia de software.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Experiência Profissional / Carreira -->
+  <section class="experience-section">
+    <h3 class="section-title">Experiência Corporativa</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h4>Assistente de Projetos / TI</h4>
+            <span class="timeline-company">Grupo GPS</span>
+            <span class="timeline-period">2025</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Apoio técnico na condução de projetos de TI, monitoramento de atividades e cronogramas operacionais.</li>
+            <li>Criação e manutenção de dashboards de indicadores e métricas executivas.</li>
+            <li>Integração entre áreas técnicas e de negócios para alinhamento e execução de metas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h4>Assistente de TI</h4>
+            <span class="timeline-company">Elcop Engenharia</span>
+            <span class="timeline-period">2024 – 2025</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Suporte técnico corporativo Nível 1 e Nível 2 para infraestrutura e sistemas internos.</li>
+            <li>Administração de redes estruturadas (LAN, WAN e Wi-Fi), garantindo conectividade e segurança.</li>
+            <li>Gerenciamento de contas, acessos, servidores e participação na implantação de novas tecnologias.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h4>Auxiliar Administrativo & Dados</h4>
+            <span class="timeline-company">SAGA Corretora de Seguros</span>
+            <span class="timeline-period">2022 – 2024</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Coleta, estruturação e análise de dados para geração de relatórios operacionais e tomada de decisão.</li>
+            <li>Diagnóstico técnico em estações de trabalho e interface de integração entre administração e TI.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Certificações Chave -->
+  <section class="certifications-section">
+    <h3 class="section-title">Certificações em Destaque</h3>
+    <div class="certs-grid">
+      <div class="cert-item">
+        <span class="cert-badge">Gestão</span>
+        <strong>Green Belt em Gestão de Projetos</strong>
+        <span class="cert-org">Metodologia Seis Sigma</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-badge">Banco de Dados</span>
+        <strong>DB Developer & Modelagem de Dados</strong>
+        <span class="cert-org">Digital Innovation One</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-badge">Desenvolvimento</span>
+        <strong>Desenvolvedor Orientado a Objetos</strong>
+        <span class="cert-org">Digital Innovation One</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-badge">Infra & Cloud</span>
+        <strong>Cloud Computing & Operador de Sistemas</strong>
+        <span class="cert-org">IFG & DIO</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Habilidades Técnicas & Stack -->
   <section class="skills-section">
-    <h3>Minhas Habilidades & Tecnologias</h3>
+    <h3 class="section-title">Stack Tecnológica & Habilidades</h3>
     <div class="skills-categories">
+      
       <div class="skills-category">
-        <h4>Frontend</h4>
+        <h4>Frontend Engineering</h4>
         <div class="skills-grid">
           <div class="skill-item angular">
-            <img [src]="angular" alt="Logo da tecnologia Angular" loading="lazy" decoding="async">
+            <img [src]="angular" alt="Logo Angular" loading="lazy" decoding="async">
             <span>Angular</span>
           </div>
           <div class="skill-item js">
-            <img [src]="javascript" alt="Logo da linguagem JavaScript" loading="lazy" decoding="async">
+            <img [src]="javascript" alt="Logo JavaScript" loading="lazy" decoding="async">
             <span>JavaScript</span>
           </div>
           <div class="skill-item html">
-            <img [src]="html" alt="Logo do padrão HTML5" loading="lazy" decoding="async">
+            <img [src]="html" alt="Logo HTML5" loading="lazy" decoding="async">
             <span>HTML5</span>
           </div>
           <div class="skill-item sass">
-            <img [src]="saas" alt="Logo do pré-processador Sass" loading="lazy" decoding="async">
+            <img [src]="saas" alt="Logo Sass" loading="lazy" decoding="async">
             <span>Sass</span>
           </div>
           <div class="skill-item ionic">
-            <img [src]="ionic" alt="Logo do framework Ionic" loading="lazy" decoding="async">
+            <img [src]="ionic" alt="Logo Ionic" loading="lazy" decoding="async">
             <span>Ionic</span>
           </div>
         </div>
       </div>
+
       <div class="skills-category">
         <h4>Backend & Bancos de Dados</h4>
         <div class="skills-grid">
-          <div class="skill-item java">
-            <img [src]="java" alt="Logo da linguagem Java" loading="lazy" decoding="async">
-            <span>Java</span>
-          </div>
           <div class="skill-item python">
-            <img [src]="python" alt="Logo da linguagem Python" loading="lazy" decoding="async">
+            <img [src]="python" alt="Logo Python" loading="lazy" decoding="async">
             <span>Python</span>
           </div>
+          <div class="skill-item java">
+            <img [src]="java" alt="Logo Java" loading="lazy" decoding="async">
+            <span>Java</span>
+          </div>
           <div class="skill-item sql">
-            <img [src]="sql" alt="Logo de bancos de dados SQL" loading="lazy" decoding="async">
-            <span>SQL</span>
+            <img [src]="sql" alt="Logo SQL" loading="lazy" decoding="async">
+            <span>SQL / MySQL</span>
           </div>
           <div class="skill-item firebase">
-            <img [src]="fire" alt="Logo da plataforma Firebase" loading="lazy" decoding="async">
+            <img [src]="fire" alt="Logo Firebase" loading="lazy" decoding="async">
             <span>Firebase</span>
           </div>
         </div>
       </div>
+
       <div class="skills-category">
-        <h4>Business Intelligence</h4>
+        <h4>Data & Business Intelligence</h4>
         <div class="skills-grid">
           <div class="skill-item bi">
-            <img [src]="bi" alt="Logo da ferramenta Power BI" loading="lazy" decoding="async">
+            <img [src]="bi" alt="Logo Power BI" loading="lazy" decoding="async">
             <span>Power BI</span>
           </div>
         </div>
       </div>
+
       <div class="skills-category">
-        <h4>Cloud & Infraestrutura</h4>
+        <h4>Infraestrutura & Cloud</h4>
         <div class="skills-grid">
           <div class="skill-item cloud">
-            <img [src]="cloud" alt="Logo de serviços Cloud e Nuvem" loading="lazy" decoding="async">
-            <span>Cloud</span>
+            <img [src]="cloud" alt="Logo Cloud" loading="lazy" decoding="async">
+            <span>Cloud & Redes</span>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 </main>
