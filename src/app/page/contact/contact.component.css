@@ -10,20 +10,17 @@
 .content h1 {
   font-family: var(--font-display);
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: var(--letter-spacing-tight);
   margin-bottom: 1rem;
-  background: linear-gradient(180deg, #FFFFFF 0%, #B0B0B0 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
 }
 
 .content p {
   font-family: var(--font-main);
   font-size: 1.15rem;
   line-height: var(--line-height-relaxed);
-  color: #a0a0a0;
+  color: #a1a1aa;
   max-width: 620px;
   margin: 0 auto 3rem auto;
 }
@@ -42,28 +39,27 @@
   align-items: center;
   gap: 1.2rem;
   padding: 1.2rem 1.8rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
+  background: #121318;
+  border: 1px solid #232530;
+  border-radius: 10px;
   text-decoration: none;
-  color: #fff;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  color: #ffffff;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
   min-width: 260px;
-  backdrop-filter: blur(10px);
 }
 
 .contact-card:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.25);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  background: #171821;
+  border-color: #3b3e52;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
 .contact-card mat-icon {
   font-size: 32px;
   height: 32px;
   width: 32px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .card-info {
@@ -75,14 +71,14 @@
 .card-label {
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #888;
+  letter-spacing: 0.1em;
+  color: #71717a;
 }
 
 .card-val {
   font-size: 0.95rem;
   font-weight: 500;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Responsive Design */

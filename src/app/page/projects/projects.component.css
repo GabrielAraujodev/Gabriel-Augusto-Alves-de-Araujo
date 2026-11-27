@@ -6,59 +6,55 @@
 
 .title {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .title h1 {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: -0.04em;
   color: #ffffff;
   margin: 0;
-  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
-
 
 ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2.5rem;
+  gap: 2rem;
   padding: 0;
 }
 
 .example-card {
-  background: rgba(255, 255, 255, 0.02) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
-  border-radius: 16px !important;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  background: #121318 !important;
+  border: 1px solid #232530 !important;
+  border-radius: 10px !important;
+  transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
   height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
 .example-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+  background: #171821 !important;
+  border-color: #3b3e52 !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
 }
 
 .example-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.8s ease;
+  border-bottom: 1px solid #232530;
+  transition: opacity 0.25s ease;
 }
 
 .example-card:hover img {
-  transform: scale(1.1);
+  opacity: 0.95;
 }
 
 .mat-card-header {
@@ -66,10 +62,10 @@ ul {
 }
 
 .mat-card-title {
-  color: #fff !important;
+  color: #ffffff !important;
   font-family: var(--font-display) !important;
   font-weight: 600 !important;
-  font-size: 1.5rem !important;
+  font-size: 1.4rem !important;
   margin: 0 !important;
 }
 
@@ -81,29 +77,29 @@ ul {
 .linguagens {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
-  margin: 1rem 0 1.5rem 0;
+  gap: 0.5rem;
+  margin: 0.8rem 0 1.2rem 0;
 }
 
 .tech-tag {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #a0a0a0;
-  padding: 0.2rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
+  background: #1a1b23;
+  border: 1px solid #282b3a;
+  color: #a0a0ab;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .example-card:hover .tech-tag {
-  border-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  border-color: #43475d;
+  color: #e4e4e7;
 }
 
 .mat-card-content p {
-  color: #888;
+  color: #a1a1aa;
   font-family: var(--font-main);
   font-size: 0.95rem;
   line-height: 1.6;
@@ -116,11 +112,11 @@ ul {
 }
 
 .mat-card-actions {
-  padding: 1.5rem !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  background: rgba(255, 255, 255, 0.01);
+  padding: 1.2rem 1.5rem !important;
+  border-top: 1px solid #232530;
+  background: #0f1014;
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .mat-card-actions a,
@@ -130,47 +126,48 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  color: #fff !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  font-size: 0.85rem;
+  color: #e4e4e7 !important;
+  background: #181920;
+  border: 1px solid #2e303e !important;
+  border-radius: 6px;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   font-weight: 600;
-  transition: all 0.3s ease;
-  height: 40px;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  height: 38px;
 }
 
-
 .mat-card-actions a:hover {
-  background: #fff !important;
-  color: #000 !important;
-  border-color: #fff !important;
+  background: #ffffff !important;
+  color: #0a0a0c !important;
+  border-color: #ffffff !important;
 }
 
 .btn {
-  margin-top: 5rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
 }
 
 .btn a {
-  padding: 1rem 2.5rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
+  padding: 0.9rem 2.2rem;
+  background: #181920;
+  border: 1px solid #2e303e;
+  color: #ffffff;
   font-family: var(--font-main);
   font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 0.2em;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
   text-decoration: none;
-  border-radius: 50px;
-  transition: all 0.4s ease;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .btn a:hover {
-  background: #fff;
-  color: #000;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  background: #ffffff;
+  color: #0a0a0c;
+  border-color: #ffffff;
 }
 
 @media (max-width: 768px) {

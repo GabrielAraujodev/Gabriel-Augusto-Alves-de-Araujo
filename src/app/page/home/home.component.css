@@ -9,25 +9,21 @@
 
 .content h1 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 4.8rem;
   letter-spacing: -0.04em;
   margin: 0;
   line-height: 1.05;
-  background: linear-gradient(180deg, #FFFFFF 0%, #A0A0A0 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.1));
+  color: #ffffff;
 }
 
 .content h2 {
   font-family: var(--font-main);
   font-weight: 500;
   font-size: 1.05rem;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #888;
+  color: #94949e;
   margin: 1.2rem 0 1.5rem 0;
 }
 
@@ -35,7 +31,7 @@
   font-family: var(--font-main);
   font-size: 1.15rem;
   line-height: 1.7;
-  color: #a0a0a0;
+  color: #a1a1aa;
   max-width: 650px;
   margin: 0 auto 2.5rem auto;
 }
@@ -58,11 +54,10 @@
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.95rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   padding: 0.85rem 1.8rem;
-  border-radius: 50px;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
   text-decoration: none;
   cursor: pointer;
 }
@@ -74,32 +69,32 @@
 }
 
 .btn-cta-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.28);
+  transform: translateY(-2px);
+  background: #f4f4f5 !important;
 }
 
 .btn-cta-secondary {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.05) !important;
+  background: #181920 !important;
   color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid #2e303e;
   font-family: var(--font-main);
   font-weight: 500;
   font-size: 0.95rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   padding: 0.85rem 1.8rem;
-  border-radius: 50px;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 8px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
   text-decoration: none;
   cursor: pointer;
 }
 
 .btn-cta-secondary:hover {
-  background: rgba(255, 255, 255, 0.12) !important;
-  border-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-3px);
+  background: #22242e !important;
+  border-color: #484b60;
+  transform: translateY(-2px);
 }
 
 .social-links {
@@ -109,14 +104,13 @@
 }
 
 .social-links a {
-  color: #888;
-  transition: all 0.3s ease;
+  color: #71717a;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .social-links a:hover {
-  color: #fff;
-  transform: translateY(-3px);
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .social-links mat-icon {
@@ -133,7 +127,7 @@
 
   .content h2 {
     font-size: 0.95rem;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.15em;
   }
 
   .hero-description {

@@ -136,34 +136,33 @@
   width: 120px;
   height: 140px;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 16px;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background: #121318;
+  border: 1px solid #232530;
+  border-radius: 10px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
   justify-content: center;
 }
 
 .skill-item:hover {
-  transform: translateY(-12px);
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  background: #171821;
+  border-color: #3b3e52;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .skill-item img {
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 48px;
   object-fit: contain;
   margin-bottom: 1.2rem;
-  filter: grayscale(100%) brightness(1.2);
-  opacity: 0.6;
-  transition: all 0.4s ease;
+  filter: grayscale(80%) brightness(1.1);
+  opacity: 0.7;
+  transition: filter 0.2s ease, opacity 0.2s ease;
 }
 
 .skill-item:hover img {
   filter: grayscale(0%) brightness(1);
   opacity: 1;
-  transform: scale(1.1);
 }
 
 /* Specific Colors for Techs */
@@ -281,10 +280,10 @@
   font-family: var(--font-main);
   font-size: 0.75rem;
   font-weight: 600;
-  color: #666;
+  color: #71717a;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  transition: all 0.4s ease;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
 }
 
 
