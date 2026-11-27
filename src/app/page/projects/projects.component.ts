@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, Inject, PLATFORM_ID, ElementRef } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { gsap } from 'gsap';
 
 interface Project {
   title: string;
@@ -14,7 +16,12 @@ interface Project {
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements AfterViewInit {
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private el: ElementRef
+  ) {}
+
   projects: Project[] = [
     {
       title: 'PlanEdu',
@@ -80,4 +87,34 @@ export class ProjectsComponent {
       githubLink: 'https://github.com/GabrielAraujodev/controle-financeiro'
     }
   ];
+
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      const root = this.el.nativeElement;
+
+      gsap.from(root.querySelector('.title h1'), {
+        y: 30,
+        opacity: 0,
+        duration: 0.7,
+        ease: 'power3.out'
+      });
+
+      gsap.from(root.querySelectorAll('.example-card'), {
+        y: 35,
+        opacity: 0,
+        duration: 0.65,
+        stagger: 0.08,
+        ease: 'power2.out',
+        delay: 0.15
+      });
+
+      gsap.from(root.querySelector('.btn'), {
+        y: 20,
+        opacity: 0,
+        duration: 0.5,
+        ease: 'power2.out',
+        delay: 0.6
+      });
+    }
+  }
 }
