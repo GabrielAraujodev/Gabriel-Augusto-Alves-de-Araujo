@@ -31,11 +31,13 @@ h4,
 .display-font {
     font-family: var(--font-display);
     letter-spacing: var(--letter-spacing-tight);
+    text-wrap: balance;
 }
 
 p,
 .body-font {
     font-family: var(--font-main);
+    text-wrap: pretty;
 }
 
 /* Cinematic Scrollbar */

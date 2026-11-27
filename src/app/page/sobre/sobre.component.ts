@@ -31,6 +31,11 @@ export class SobreComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReducedMotion) {
+        return;
+      }
+
       const root = this.el.nativeElement;
 
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
